@@ -1,0 +1,11 @@
+[package]
+name = "rustsec"
+version = "0.1.0"
+edition = "2021"
+
+# Specify that this is a shared library for FFI
+[lib]
+crate-type = ["cdylib"]
+
+# Dependencies (none for now, but you can add later)
+[dependencies]
