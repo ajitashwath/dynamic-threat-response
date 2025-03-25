@@ -16,7 +16,7 @@ class ThreatSignatures:
     def _default_signatures(self) -> Dict[str, Any]:
         return {
             "network_threats": {
-            "suspicious_ports": [31337, 6667, 8080, 4444, 3389], # Common backdoor ports
+            "suspicious_ports": [31337, 6667, 8080, 4444, 3389], # Common backdoor (malicious) ports
                 "blacklisted_ips": [
                     "185.153.196.74", "91.121.88.14",       # Known malicious IPs
                     "45.133.193.142", "185.234.217.0/24"
