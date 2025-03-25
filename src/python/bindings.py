@@ -2,8 +2,8 @@ import ctypes
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-C_LIB_PATH = os.path.join(BASE_DIR, "lib", "libmonitor.so")
-RUST_LIB_PATH = os.path.join(BASE_DIR, "lib", "librustsec.so")
+C_LIB_PATH = os.path.join(BASE_DIR, "lib", "libmonitor.dll")
+RUST_LIB_PATH = os.path.join(BASE_DIR, "lib", "librustsec.dll")
 
 c_lib = ctypes.CDLL(C_LIB_PATH)
 rust_lib = ctypes.CDLL(RUST_LIB_PATH)
