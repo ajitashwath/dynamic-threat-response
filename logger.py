@@ -15,7 +15,6 @@ class ThreatLogger:
     ):
         os.makedirs(log_dir, exist_ok = True)
         self.log_path = os.path.join(log_dir, log_file)
-
         self.logger = logging.getLogger('ThreatResponseLogger')
         self.logger.setLevel(logging.INFO)
     
