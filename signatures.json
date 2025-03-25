@@ -1,0 +1,74 @@
+{
+    "network_threats": {
+        "suspicious_ports": [
+            31337, 6667, 8080, 4444, 3389, 
+            6668, 6669, 7000, 7001, 8000
+        ],
+        "blacklisted_ips": [
+            "185.153.196.74", 
+            "91.121.88.14", 
+            "45.133.193.142",
+            "185.234.217.0/24",
+            "192.168.1.100"
+        ],
+        "tor_exit_nodes": [
+            "185.220.100.0/24",
+            "85.31.186.0/24",
+            "37.48.120.0/24"
+        ]
+    },
+    "process_threats": {
+        "risky_processes": [
+            "nmap", 
+            "metasploit", 
+            "hydra", 
+            "john", 
+            "aircrack", 
+            "wireshark",
+            "sqlmap", 
+            "nikto",
+            "netcat",
+            "msfconsole"
+        ],
+        "process_patterns": [
+            ".*hack.*",
+            ".*exploit.*", 
+            ".*shell.*", 
+            ".*reverse.*",
+            ".*payload.*",
+            ".*injector.*"
+        ]
+    },
+    "file_threats": {
+        "suspicious_extensions": [
+            ".exe", 
+            ".bat", 
+            ".cmd", 
+            ".vbs", 
+            ".ps1", 
+            ".dll", 
+            ".jar",
+            ".msi",
+            ".scr"
+        ],
+        "malware_signatures": [
+            "MZ\\x90\\x00\\x03\\x00\\x00\\x00",
+            "#!msfconsole",
+            "\\x4D\\x5A\\x90\\x00\\x03\\x00\\x00\\x00"
+        ]
+    },
+    "network_patterns": {
+        "suspicious_domains": [
+            ".*torrent.*", 
+            ".*proxy.*", 
+            ".*anonymizer.*",
+            ".*darkweb.*",
+            ".*underground.*"
+        ]
+    },
+    "mitigation_rules": {
+        "auto_block_threshold": 3,
+        "block_duration_minutes": 30,
+        "notify_admin_on_critical": true
+    }
+}
