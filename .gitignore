@@ -1,35 +1,54 @@
-# Prerequisites
-*.d
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+*.egg-info/
+*.egg
+lib/
+lib64/
 
-# Precompiled Headers
-*.gch
-*.pch
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-*.vscode
+# Virtualenv
+venv/
+ENV/
+env/
+venv.bak/
+env.bak/
 
-# Fortran module files
-*.mod
-*.smod
+# Python virtual environment directories
+.idea/
+.vscode/
+*.env
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# Jupyter Notebook
+.ipynb_checkpoints
 
-# Executables
-*.exe
-*.out
-*.app
+# Pytest
+.cache/
 
-*.venv
+# Pyre type checker
+.pyre/
+
+# mypy
+.mypy_cache/
+
+# VS Code settings
+.vscode/
+
+# MacOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
