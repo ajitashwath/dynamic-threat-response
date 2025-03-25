@@ -21,7 +21,7 @@ class ProcessMonitor:
         return processes
 
     @staticmethod
-    def get_process_details(pid: int) -> Dict[str, Any]:
+    def get_process_details(pid:int) -> Dict[str, Any]:
         try:
             process = psutil.Process(pid)
             return {
