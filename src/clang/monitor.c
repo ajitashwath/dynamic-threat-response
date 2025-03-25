@@ -1,29 +1,21 @@
+#include <windows.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <sys/inotify.h>
-#include <unistd.h>
-#include <string.h>
 #include <stdbool.h>
-#include <pthread.h>
 #include <signal.h>
-
-#define EVENT_SIZE (sizeof(struct inotify_event))
-#define BUFFER_LEN (1024 * (EVENT_SIZE + 16))
+#define MAX_PATH_LENGTH 1024
 
 volatile sig_atomic_t monitor_running = 0;
-int global_fd = -1;
-int global_wd = -1;
+HANDLE global_dir_handle = NULL;
 
 typedef struct {
-    char path[256];
+    char path[MAX_PATH_LENGTH];
     void (*callback)(const char*, const char*);
 } MonitorContext;
 
 void stop_monitoring(int signum) {
     printf("Stopping directory monitoring...\n");
     monitor_running = 0;
-    if (global_wd != -1) inotify_rm_watch(global_fd, global_wd);
-    if (global_fd != -1) close(global_fd);
 }
 
 int monitor_directory(const char *path, void (*callback)(const char*, const char*)) {
@@ -31,84 +23,85 @@ int monitor_directory(const char *path, void (*callback)(const char*, const char
     signal(SIGTERM, stop_monitoring);
 
     monitor_running = 1;
-    global_fd = -1;
-    global_wd = -1;
+    wchar_t w_path[MAX_PATH_LENGTH];
+    MultiByteToWideChar(CP_UTF8, 0, path, -1, w_path, MAX_PATH_LENGTH);
 
-    int fd = inotify_init();
-    if (fd < 0) {
-        perror("Failed to initialize inotify");
-        return -1;
-    }
-    global_fd = fd;
-
-    int wd = inotify_add_watch(fd, path, 
-        IN_CREATE |    
-        IN_DELETE |    
-        IN_MODIFY |    
-        IN_MOVED_FROM | 
-        IN_MOVED_TO
+    HANDLE dir_handle = CreateFileW(
+        w_path,
+        FILE_LIST_DIRECTORY,
+        FILE_SHARE_READ | FILE_SHARE_WRITE | FILE_SHARE_DELETE,
+        NULL,
+        OPEN_EXISTING,
+        FILE_FLAG_BACKUP_SEMANTICS | FILE_FLAG_OVERLAPPED,
+        NULL
     );
-    if (wd < 0) {
-        perror("Failed to add watch");
-        close(fd);
+
+    if (dir_handle == INVALID_HANDLE_VALUE) {
+        printf("Failed to open directory: %s\n", path);
         return -1;
     }
-    global_wd = wd;
+
+    global_dir_handle = dir_handle;
+    BYTE buffer[1024 * sizeof(FILE_NOTIFY_INFORMATION)];
+    DWORD bytes_returned;
 
     printf("Monitoring directory: %s\n", path);
-    char buffer[BUFFER_LEN];
 
     while (monitor_running) {
-        fd_set read_fds;
-        struct timeval timeout;
-        
-        FD_ZERO(&read_fds);
-        FD_SET(fd, &read_fds);
-        
-        timeout.tv_sec = 1; 
-        timeout.tv_usec = 0;
-        int ready = select(fd + 1, &read_fds, NULL, NULL, &timeout);
-        if (ready < 0) {
-            perror("Select error");
+        if (ReadDirectoryChangesW(
+            dir_handle,
+            buffer,
+            sizeof(buffer),
+            TRUE,
+            FILE_NOTIFY_CHANGE_FILE_NAME | 
+            FILE_NOTIFY_CHANGE_DIR_NAME | 
+            FILE_NOTIFY_CHANGE_ATTRIBUTES | 
+            FILE_NOTIFY_CHANGE_SIZE | 
+            FILE_NOTIFY_CHANGE_LAST_WRITE,
+            &bytes_returned,
+            NULL,
+            NULL
+        ) == 0) {
+            printf("ReadDirectoryChangesW failed\n");
             break;
         }
-        if (ready == 0) continue;
-        int length = read(fd, buffer, BUFFER_LEN);
-        if (length < 0) {
-            perror("Failed to read events");
-            break;
-        }
-        int i = 0;
-        while (i < length) {
-            struct inotify_event *event = (struct inotify_event *)&buffer[i];
-            
-            if (event -> len) {
-                if (event -> mask & IN_CREATE) {
-                    if (callback) callback(path, event -> name);
-                    printf("Created: %s/%s\n", path, event -> name);
-                }
-                if (event -> mask & IN_DELETE) {
-                    if (callback) callback(path, event -> name);
-                    printf("Deleted: %s/%s\n", path, event -> name);
-                }
-                if (event -> mask & IN_MODIFY) {
-                    if (callback) callback(path, event -> name);
-                    printf("Modified: %s/%s\n", path, event -> name);
-                }
-                if (event -> mask & IN_MOVED_FROM) {
-                    if (callback) callback(path, event -> name);
-                    printf("Moved from: %s/%s\n", path, event -> name);
-                }
-                if (event -> mask & IN_MOVED_TO) {
-                    if (callback) callback(path, event -> name);
-                    printf("Moved to: %s/%s\n", path, event -> name);
-                }
+
+        PFILE_NOTIFY_INFORMATION notify = (PFILE_NOTIFY_INFORMATION)buffer;
+        while (TRUE) {
+            wchar_t filename[MAX_PATH];
+            wcscpy_s(filename, MAX_PATH, notify -> FileName);
+
+            char utf8_filename[MAX_PATH];
+            WideCharToMultiByte(CP_UTF8, 0, filename, -1, utf8_filename, MAX_PATH, NULL, NULL);
+            switch (notify -> Action) {
+                case FILE_ACTION_ADDED:
+                    printf("Created: %s/%s\n", path, utf8_filename);
+                    if (callback) callback(path, utf8_filename);
+                    break;
+                case FILE_ACTION_REMOVED:
+                    printf("Deleted: %s/%s\n", path, utf8_filename);
+                    if (callback) callback(path, utf8_filename);
+                    break;
+                case FILE_ACTION_MODIFIED:
+                    printf("Modified: %s/%s\n", path, utf8_filename);
+                    if (callback) callback(path, utf8_filename);
+                    break;
+                case FILE_ACTION_RENAMED_OLD_NAME:
+                    printf("Renamed from: %s/%s\n", path, utf8_filename);
+                    if (callback) callback(path, utf8_filename);
+                    break;
+                case FILE_ACTION_RENAMED_NEW_NAME:
+                    printf("Renamed to: %s/%s\n", path, utf8_filename);
+                    if (callback) callback(path, utf8_filename);
+                    break;
             }
-            i += EVENT_SIZE + event -> len;
+
+            if (notify->NextEntryOffset == 0) break;
+            notify = (PFILE_NOTIFY_INFORMATION)((BYTE*)notify + notify -> NextEntryOffset);
         }
     }
-    inotify_rm_watch(fd, wd);
-    close(fd);
+    CloseHandle(dir_handle);
+    global_dir_handle = NULL;
     printf("Monitoring stopped for %s\n", path);
     return 0;
 }
@@ -116,7 +109,7 @@ int monitor_directory(const char *path, void (*callback)(const char*, const char
 #ifdef __cplusplus
 extern "C" {
 #endif
-int monitor_directory(const char *path);
+int monitor_directory(const char *path, void (*callback)(const char*, const char*));
 #ifdef __cplusplus
 }
 #endif
