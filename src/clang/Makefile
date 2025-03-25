@@ -1,2 +1,2 @@
 all:
-    gcc -shared -fPIC -o ../lib/libmonitor.so monitor.c -I .
+	gcc -shared -o ../lib/libmonitor.dll monitor.c -I . -lkernel32
