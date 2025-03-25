@@ -6,8 +6,8 @@ from threat_signatures import ThreatSignatures
 from threat_detector import ThreatDetector
 from network_analyzer import NetworkAnalyzer
 from process_monitor import ProcessMonitor
-from logger import ThreatLogger
 from ui import ThreatResponseUI
+from logger import ThreatLogger
 
 class DynamicThreatResponseSystem:
     def __init__(self):
