@@ -36,7 +36,7 @@ class ThreatDetector:
                 if re.search(pattern, domain, re.IGNORECASE):
                     self.logger.log_threat(
                         f"Suspicious domain detected: {domain}", 
-                        severity = 'medium'
+                        severity ='medium'
                     )
                     self.increment_threat_score(25)
                     return True
