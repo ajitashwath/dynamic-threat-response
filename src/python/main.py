@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 
 @dataclass
 class MonitorConfig:
-    path: str = "/tmp/test_dir"
+    path: str = r"C:\temp\test_dir" 
     scan_interval: float = 1.0
     max_retries: int = 3
     timeout: float = 30.0
@@ -39,13 +39,28 @@ class ThreatMonitor:
             logger.error(f"Failed to create monitoring directory: {e}")
             raise
 
+    def _file_event_callback(self, path: bytes, filename: bytes):
+        try:
+            path_str = path.decode('utf-8')
+            filename_str = filename.decode('utf-8')
+            full_path = os.path.join(path_str, filename_str)
+            
+            logger.info(f"File event detected: {full_path}")
+        except Exception as e:
+            logger.error(f"Error in file event callback: {e}")
+
     def _monitor_directory(self):
         retry_count = 0
         while not self.stop_event.is_set():
             try:
-                event_code = monitor(self.config.path)
+                event_code = monitor(
+                    self.config.path, 
+                    callback = self._file_event_callback
+                )
+                
                 if event_code != 0:
                     self._handle_potential_threat(event_code)
+                
                 retry_count = 0
                 time.sleep(self.config.scan_interval)
             
@@ -55,8 +70,7 @@ class ThreatMonitor:
                 if retry_count > self.config.max_retries:
                     logger.critical("Exceeded maximum retry attempts. Stopping monitoring.")
                     break
-        
-                # Exponential backoff
+
                 wait_time = min(2 ** retry_count, self.config.timeout)
                 logger.warning(f"Retrying in {wait_time} seconds (Attempt {retry_count})")
                 time.sleep(wait_time)
@@ -83,8 +97,8 @@ class ThreatMonitor:
         logger.info("Starting threat monitoring system...")
         self.stop_event.clear()
         self.monitor_thread = threading.Thread(
-            target = self._monitor_directory, 
-            daemon = True
+            target=self._monitor_directory, 
+            daemon=True
         )
         self.monitor_thread.start()
 
@@ -97,9 +111,10 @@ class ThreatMonitor:
                 logger.warning("Failed to stop monitoring thread")
 
 def main():
+    threat_monitor = None
     try:
         monitor_config = MonitorConfig(
-            path = "/tmp/test_dir",
+            path = r"C:\temp\test_dir",  # Windows-style path
             scan_interval = 1.0,
             max_retries = 3
         )
@@ -112,7 +127,8 @@ def main():
     except Exception as e:
         logger.critical(f"Unhandled exception: {e}")
     finally:
-        threat_monitor.stop()
+        if threat_monitor:
+            threat_monitor.stop()
 
 if __name__ == "__main__":
     main()
