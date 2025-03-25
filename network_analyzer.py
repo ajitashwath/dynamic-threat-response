@@ -1,4 +1,4 @@
-import psutil
+import psutil as ps
 import socket
 import ipaddress
 from typing import List, Dict, Any
@@ -7,7 +7,7 @@ class NetworkAnalyzer:
     @staticmethod
     def get_network_connections() -> List[Dict[str, Any]]:
         connections = []
-        for conn in psutil.net_connections():
+        for conn in ps.net_connections():
             try:
                 connection_info = {
                     'fd': conn.fd,
