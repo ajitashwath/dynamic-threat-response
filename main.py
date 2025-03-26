@@ -31,6 +31,8 @@ class DynamicThreatResponseSystem:
             self.is_monitoring = False
             if self.monitoring_thread:
                 self.monitoring_thread.join(timeout=5)  
+                if self.monitoring_thread.is_alive():
+                    self.logger.log_event("Warning: Monitoring thread still alive", level='warning')
             self.logger.log_event("Threat Monitoring Stopped")
             return True
         return False
@@ -44,7 +46,7 @@ class DynamicThreatResponseSystem:
                 for conn in network_connections:
                     if self.threat_detector.analyze_network_connection(conn):
                         self.logger.log_threat(
-                            f"Threat detected in connection: {conn['remote_address']}:{conn['remote_port']}",
+                            f"Threat detected in connection: {conn.get('remote_address', 'Unknown')}:{conn.get('remote_port', 'Unknown')}",
                             severity='medium',
                             details=conn
                         )
@@ -53,18 +55,7 @@ class DynamicThreatResponseSystem:
                     self.threat_detector.analyze_process(process)
                 time.sleep(5)
             except Exception as e:
-                self.logger.log_event(f"Monitoring loop error: {e}", level = 'error')
-        
-    def stop_monitoring(self):
-        if self.is_monitoring:
-            self.is_monitoring = False
-            if self.monitoring_thread:
-                self.monitoring_thread.join(timeout = 5)  
-                if self.monitoring_thread.is_alive():
-                    self.logger.log_event("Warning: Monitoring thread still alive", level = 'warning')
-            self.logger.log_event("Threat Monitoring Stopped")
-            return True
-        return False
+                self.logger.log_event(f"Monitoring loop error: {e}", level='error')
 
 def main():
     threat_system = DynamicThreatResponseSystem()
