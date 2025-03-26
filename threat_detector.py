@@ -14,80 +14,262 @@ class ThreatDetector:
         self.max_threat_score = 100
     
     def analyze_network_connection(self, connection: Dict[str, Any]) -> bool:
+        """
+        Analyze a network connection for potential threats
+        
+        Args:
+            connection (Dict[str, Any]): Network connection details
+        
+        Returns:
+            bool: True if threat detected, False otherwise
+        """
+        # Validate connection dictionary has required keys
+        if not connection or not isinstance(connection, dict):
+            self.logger.log_event(
+                "Invalid network connection data received", 
+                level='warning'
+            )
+            return False
+
+        # Extract remote address with safe fallback
+        remote_address = connection.get('remote_address')
+        remote_port = connection.get('remote_port')
+
+        # Skip analysis if remote address is None or empty
+        if not remote_address:
+            self.logger.log_event(
+                "Skipping network connection analysis: No remote address", 
+                level='warning'
+            )
+            return False
+
         net_sigs = self.signatures.get_network_signatures()
-        if connection['remote_address'] in net_sigs.get('blacklisted_ips', []):
+        
+        # Check for blacklisted IPs
+        if remote_address in net_sigs.get('blacklisted_ips', []):
             self.logger.log_threat(
-                f"Blocked connection to blacklisted IP: {connection['remote_address']}", 
+                f"Blocked connection to blacklisted IP: {remote_address}", 
                 severity='high'
             )
             self.increment_threat_score(30)
             return True
 
-        if connection['remote_port'] in net_sigs.get('suspicious_ports', []):
+        # Check for suspicious ports
+        if remote_port in net_sigs.get('suspicious_ports', []):
             self.logger.log_threat(
-                f"Suspicious port detected: {connection['remote_port']}", 
+                f"Suspicious port detected: {remote_port}", 
                 severity='medium'
             )
             self.increment_threat_score(20)
             return True
+        
         try:
-            domain = socket.gethostbyaddr(connection['remote_address'])[0]
-            for pattern in self.signatures.signatures['network_patterns']['suspicious_domains']:
-                if re.search(pattern, domain, re.IGNORECASE):
-                    self.logger.log_threat(
-                        f"Suspicious domain detected: {domain}", 
-                        severity ='medium'
-                    )
-                    self.increment_threat_score(25)
-                    return True
-        except (socket.herror, socket.gaierror):
-            pass
+            # Only attempt domain resolution if remote_address is a valid string
+            if isinstance(remote_address, str):
+                # Resolve domain and check for suspicious patterns
+                domain = self._resolve_domain(remote_address)
+                
+                # Check for suspicious domains
+                for pattern in self.signatures.signatures['network_patterns']['suspicious_domains']:
+                    if re.search(pattern, domain, re.IGNORECASE):
+                        self.logger.log_threat(
+                            f"Suspicious domain detected: {domain}", 
+                            severity='medium'
+                        )
+                        self.increment_threat_score(25)
+                        return True
+        except Exception as e:
+            # Log resolution failures without interrupting the analysis
+            self.logger.log_event(
+                f"Domain resolution failed for {remote_address}: {str(e)}", 
+                level='warning'
+            )
+        
         return False
 
+    def _resolve_domain(self, ip_address: str, timeout: float = 1.0) -> str:
+        """
+        Resolve domain name with a timeout and fallback mechanism
+        
+        Args:
+            ip_address (str): IP address to resolve
+            timeout (float, optional): DNS resolution timeout. Defaults to 1.0 seconds.
+        
+        Returns:
+            str: Resolved domain name or original IP address
+        """
+        # Validate input
+        if not ip_address or not isinstance(ip_address, str):
+            return ip_address
+
+        try:
+            # First, try DNS lookup with timeout
+            socket.setdefaulttimeout(timeout)
+            domain = socket.gethostbyaddr(ip_address)[0]
+            return domain
+        except (socket.herror, socket.gaierror, socket.timeout):
+            # Fallback: try reverse DNS lookup
+            try:
+                return socket.getfqdn(ip_address)
+            except Exception:
+                # If all methods fail, return the original IP
+                return ip_address
+
     def analyze_process(self, process_info: Dict[str, Any]) -> bool:
+        """
+        Analyze a process for potential threats
+        
+        Args:
+            process_info (Dict[str, Any]): Process information details
+        
+        Returns:
+            bool: True if threat detected, False otherwise
+        """
+        # Validate process_info
+        if not process_info or not isinstance(process_info, dict):
+            self.logger.log_event(
+                "Invalid process information received", 
+                level='warning'
+            )
+            return False
+
         process_name = process_info.get('name', '')
+        if not process_name:
+            self.logger.log_event(
+                "Skipping process analysis: No process name", 
+                level='warning'
+            )
+            return False
+
         if self.signatures.match_process_name(process_name):
             self.logger.log_threat(
                 f"Potentially malicious process detected: {process_name}", 
-                severity = 'high'
+                severity='high'
             )
             self.increment_threat_score(40)
             return True
         return False
 
     def analyze_file(self, file_path: str) -> bool:
-        file_sigs = self.signatures.get_file_signatures()
-        file_ext = file_path.split('.')[-1]
-        if f".{file_ext}" in file_sigs.get('suspicious_extensions', []):
-            self.logger.log_threat(
-                f"Suspicious file extension detected: .{file_ext}", 
-                severity = 'medium'
+        """
+        Analyze a file for potential threats
+        
+        Args:
+            file_path (str): Path to the file to analyze
+        
+        Returns:
+            bool: True if threat detected, False otherwise
+        """
+        # Validate file path
+        if not file_path or not isinstance(file_path, str):
+            self.logger.log_event(
+                "Invalid file path received for analysis", 
+                level='warning'
             )
-            self.increment_threat_score(20)
-            return True 
+            return False
+
+        file_sigs = self.signatures.get_file_signatures()
+        
         try:
+            # Extract file extension safely
+            file_ext = file_path.split('.')[-1] if '.' in file_path else ''
+            
+            # Check for suspicious file extensions
+            if f".{file_ext}" in file_sigs.get('suspicious_extensions', []):
+                self.logger.log_threat(
+                    f"Suspicious file extension detected: .{file_ext}", 
+                    severity='medium'
+                )
+                self.increment_threat_score(20)
+                return True 
+            
+            # Check for malware signatures in file content
             with open(file_path, 'rb') as f:
                 file_content = f.read()
                 for signature in file_sigs.get('malware_signatures', []):
                     if re.search(signature.encode(), file_content):
                         self.logger.log_threat(
                             f"Malware signature found in file: {file_path}", 
-                            severity = 'high'
+                            severity='high'
                         )
                         self.increment_threat_score(50)
                         return True
-        except Exception:
-            pass
+        except FileNotFoundError:
+            self.logger.log_event(
+                f"File not found during analysis: {file_path}", 
+                level='warning'
+            )
+        except PermissionError:
+            self.logger.log_event(
+                f"Permission denied accessing file: {file_path}", 
+                level='warning'
+            )
+        except Exception as e:
+            self.logger.log_event(
+                f"Error analyzing file {file_path}: {str(e)}", 
+                level='warning'
+            )
 
         return False
 
     def increment_threat_score(self, score: int):
+        """
+        Increment the threat score and log critical levels
+        
+        Args:
+            score (int): Score to increment
+        """
         self.threat_score = min(self.threat_score + score, self.max_threat_score)
         if self.threat_score > 70:
             self.logger.log_threat(
                 f"CRITICAL THREAT LEVEL: Threat Score {self.threat_score}", 
-                severity = 'critical'
+                severity='critical'
             )
 
     def reset_threat_score(self):
+        """
+        Reset the threat score to zero
+        """
         self.threat_score = 0
+
+# Optional main block for testing
+def main():
+    from logger import ThreatLogger
+    
+    # Create logger and threat detector for testing
+    logger = ThreatLogger()
+    threat_detector = ThreatDetector(logger)
+    
+    # Example network connection test
+    test_connections = [
+        {
+            'remote_address': '8.8.8.8',  # Google DNS
+            'remote_port': 53
+        },
+        {
+            'remote_address': None,  # Invalid connection
+            'remote_port': None
+        }
+    ]
+    
+    # Analyze test connections
+    for connection in test_connections:
+        print(f"Analyzing connection: {connection}")
+        threat_detected = threat_detector.analyze_network_connection(connection)
+        print(f"Threat detected: {threat_detected}\n")
+    
+    # Example process test
+    test_processes = [
+        {'name': 'normal_process'},
+        {'name': 'suspicious_process'},
+        {}  # Invalid process
+    ]
+    
+    # Analyze test processes
+    for process in test_processes:
+        print(f"Analyzing process: {process}")
+        process_threat = threat_detector.analyze_process(process)
+        print(f"Process threat detected: {process_threat}\n")
+
+if __name__ == "__main__":
+    main()
