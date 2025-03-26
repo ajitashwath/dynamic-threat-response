@@ -7,6 +7,25 @@ from process_monitor import ProcessMonitor
 from ui import ThreatResponseUI
 from logger import ThreatLogger
 
+# Main execution file that processes threats
+
+from threat_detector import assess_threat
+from status_manager import get_system_status
+
+def run_system():
+    # Example threat data - replace this with real input
+    incoming_threat = {"id": 101, "name": "Malware Attack", "severity": 8}
+
+    print(f"Processing Threat: {incoming_threat['name']} (Severity: {incoming_threat['severity']})")
+
+    severity = assess_threat(incoming_threat)
+    
+    print(f"Threat severity assessed as: {severity}")
+    print(f"Current System Status: {get_system_status()}")
+
+if __name__ == "__main__":
+    run_system()
+
 class DynamicThreatResponseSystem:
     def __init__(self):
         self.logger = ThreatLogger()

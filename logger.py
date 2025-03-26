@@ -5,6 +5,19 @@ from datetime import datetime
 import json
 from typing import Dict, Any, Optional
 
+# Logging module to track system changes and events
+# Configure logging
+logging.basicConfig(
+    filename="system.log",
+    level=logging.INFO,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
+
+def log_status_change(message):
+    """Logs status changes in the system."""
+    logging.info(message)
+
+    
 class ThreatLogger:
     def __init__(
         self,
