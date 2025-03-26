@@ -1,0 +1,402 @@
+2025-03-26 23:57:28,795 - INFO - System status updated to: Danger
+2025-03-26 23:57:28,795 - INFO - System status set to Danger due to high threat severity.
+2025-03-26 23:57:31,761 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,762 - INFO - Threat Monitoring Started
+2025-03-26 23:57:31,762 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,762 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,763 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,764 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,764 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,764 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,765 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,765 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,765 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,766 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,766 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,766 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,766 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,766 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,766 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,766 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,767 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,767 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,767 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,767 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,768 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,768 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,768 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,768 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,768 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,769 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,769 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,770 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,770 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,771 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,771 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,771 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,771 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,772 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,772 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,772 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,773 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,773 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,773 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,774 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,774 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,775 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,775 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,776 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,776 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,777 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,777 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,777 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,777 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,778 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,778 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,779 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,779 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,779 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,786 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,793 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,795 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,803 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,803 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,803 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,804 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,804 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,804 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,804 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,805 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,806 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,806 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,806 - WARNING - Invalid IP address: None
+2025-03-26 23:57:31,807 - WARNING - Invalid IP address: None
+2025-03-26 23:57:35,215 - WARNING - Skipping process analysis: No process name
+2025-03-26 23:57:35,216 - WARNING - THREAT: Potentially malicious process detected: powershell.exe
+2025-03-26 23:57:35,225 - WARNING - THREAT: Potentially malicious process detected: ShellExperienceHost.exe
+2025-03-26 23:57:35,241 - WARNING - THREAT: CRITICAL THREAT LEVEL: Threat Score 80
+2025-03-26 23:57:35,258 - WARNING - THREAT: Potentially malicious process detected: ServiceShell.exe
+2025-03-26 23:57:35,274 - WARNING - THREAT: CRITICAL THREAT LEVEL: Threat Score 100
+2025-03-26 23:57:35,291 - WARNING - THREAT: Potentially malicious process detected: powershell.exe
+2025-03-26 23:57:35,308 - WARNING - THREAT: CRITICAL THREAT LEVEL: Threat Score 100
+2025-03-26 23:57:40,329 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,330 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,330 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,330 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,331 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,331 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,331 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,332 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,332 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,332 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,332 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,332 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,333 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,333 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,333 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,333 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,333 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,333 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,334 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,334 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,334 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,334 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,334 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,335 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,335 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,335 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,335 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,336 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,336 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,336 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,336 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,337 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,337 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,337 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,337 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,338 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,338 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,338 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,338 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,339 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,339 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,339 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,339 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,340 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,340 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,340 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,341 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,341 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,341 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,342 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,342 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,342 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,343 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,343 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,343 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,344 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,344 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,344 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,345 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,345 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,346 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,346 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,346 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,347 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,347 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,347 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,347 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,347 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,348 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,348 - WARNING - Invalid IP address: None
+2025-03-26 23:57:40,348 - WARNING - Invalid IP address: None
+2025-03-26 23:57:42,141 - WARNING - Skipping process analysis: No process name
+2025-03-26 23:57:42,142 - WARNING - THREAT: Potentially malicious process detected: powershell.exe
+2025-03-26 23:57:42,148 - WARNING - THREAT: CRITICAL THREAT LEVEL: Threat Score 100
+2025-03-26 23:57:42,188 - WARNING - THREAT: Potentially malicious process detected: ShellExperienceHost.exe
+2025-03-26 23:57:42,205 - WARNING - THREAT: CRITICAL THREAT LEVEL: Threat Score 100
+2025-03-26 23:57:42,220 - WARNING - THREAT: Potentially malicious process detected: ServiceShell.exe
+2025-03-26 23:57:42,236 - WARNING - THREAT: CRITICAL THREAT LEVEL: Threat Score 100
+2025-03-26 23:57:42,251 - WARNING - THREAT: Potentially malicious process detected: powershell.exe
+2025-03-26 23:57:42,266 - WARNING - THREAT: CRITICAL THREAT LEVEL: Threat Score 100
+2025-03-26 23:57:47,284 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,285 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,285 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,285 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,285 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,285 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,286 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,286 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,286 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,286 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,286 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,286 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,287 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,287 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,287 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,287 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,287 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,287 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,288 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,288 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,288 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,288 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,288 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,288 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,288 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,289 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,289 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,289 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,289 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,290 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,290 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,290 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,290 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,290 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,290 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,291 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,291 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,291 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,291 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,292 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,292 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,292 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,292 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,292 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,293 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,293 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,293 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,294 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,295 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,295 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,296 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,296 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,297 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,297 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,297 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,298 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,298 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,298 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,299 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,299 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,299 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,300 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,300 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,300 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,301 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,301 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,301 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,302 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,302 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,302 - WARNING - Invalid IP address: None
+2025-03-26 23:57:47,302 - WARNING - Invalid IP address: None
+2025-03-26 23:57:48,981 - WARNING - Skipping process analysis: No process name
+2025-03-26 23:57:48,983 - WARNING - THREAT: Potentially malicious process detected: powershell.exe
+2025-03-26 23:57:48,989 - WARNING - THREAT: CRITICAL THREAT LEVEL: Threat Score 100
+2025-03-26 23:57:49,034 - WARNING - THREAT: Potentially malicious process detected: ShellExperienceHost.exe
+2025-03-26 23:57:49,052 - WARNING - THREAT: CRITICAL THREAT LEVEL: Threat Score 100
+2025-03-26 23:57:49,068 - WARNING - THREAT: Potentially malicious process detected: ServiceShell.exe
+2025-03-26 23:57:49,087 - WARNING - THREAT: CRITICAL THREAT LEVEL: Threat Score 100
+2025-03-26 23:57:49,105 - WARNING - THREAT: Potentially malicious process detected: powershell.exe
+2025-03-26 23:57:49,122 - WARNING - THREAT: CRITICAL THREAT LEVEL: Threat Score 100
+2025-03-26 23:57:54,140 - INFO - Threat Monitoring Stopped
+2025-03-27 00:04:16,392 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,392 - INFO - Threat Monitoring Started
+2025-03-27 00:04:16,394 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,394 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,394 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,396 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,396 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,396 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,397 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,398 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,399 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,400 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,401 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,401 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,402 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,402 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,402 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,403 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,403 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,403 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,404 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,404 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,404 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,405 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,405 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,405 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,406 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,406 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,406 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,407 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,407 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,407 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,408 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,408 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,409 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,409 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,409 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,410 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,410 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,411 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,411 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,412 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,412 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,412 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,413 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,413 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,414 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,414 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,414 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,415 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,415 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,416 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,416 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,416 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,417 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,417 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,418 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,418 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,418 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,418 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,419 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,419 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,419 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,426 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,426 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,427 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,427 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,427 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,427 - WARNING - Invalid IP address: None
+2025-03-27 00:04:16,428 - WARNING - Invalid IP address: None
+2025-03-27 00:04:19,711 - WARNING - Skipping process analysis: No process name
+2025-03-27 00:04:19,713 - WARNING - THREAT: Potentially malicious process detected: powershell.exe
+2025-03-27 00:04:19,724 - WARNING - THREAT: Potentially malicious process detected: ShellExperienceHost.exe
+2025-03-27 00:04:19,748 - WARNING - THREAT: CRITICAL THREAT LEVEL: Threat Score 80
+2025-03-27 00:04:19,773 - WARNING - THREAT: Potentially malicious process detected: ServiceShell.exe
+2025-03-27 00:04:19,793 - WARNING - THREAT: CRITICAL THREAT LEVEL: Threat Score 100
+2025-03-27 00:04:19,810 - WARNING - THREAT: Potentially malicious process detected: powershell.exe
+2025-03-27 00:04:19,827 - WARNING - THREAT: CRITICAL THREAT LEVEL: Threat Score 100
+2025-03-27 00:04:24,849 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,849 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,850 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,850 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,850 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,850 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,851 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,851 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,851 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,851 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,851 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,852 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,852 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,852 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,852 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,852 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,852 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,852 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,853 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,853 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,853 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,853 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,853 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,853 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,853 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,854 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,854 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,854 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,854 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,854 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,855 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,855 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,855 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,855 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,855 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,856 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,856 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,856 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,856 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,857 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,857 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,857 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,857 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,858 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,858 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,858 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,858 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,859 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,859 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,859 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,859 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,859 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,860 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,860 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,860 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,861 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,861 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,862 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,863 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,863 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,863 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,863 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,863 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,864 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,864 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,864 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,864 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,865 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,865 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,865 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,865 - WARNING - Invalid IP address: None
+2025-03-27 00:04:24,865 - WARNING - Invalid IP address: None
+2025-03-27 00:04:26,461 - WARNING - Skipping process analysis: No process name
+2025-03-27 00:04:26,462 - WARNING - THREAT: Potentially malicious process detected: powershell.exe
+2025-03-27 00:04:26,497 - WARNING - THREAT: CRITICAL THREAT LEVEL: Threat Score 100
+2025-03-27 00:04:26,517 - WARNING - THREAT: Potentially malicious process detected: ShellExperienceHost.exe
+2025-03-27 00:04:26,532 - WARNING - THREAT: CRITICAL THREAT LEVEL: Threat Score 100
+2025-03-27 00:04:26,548 - WARNING - THREAT: Potentially malicious process detected: ServiceShell.exe
+2025-03-27 00:04:26,563 - WARNING - THREAT: CRITICAL THREAT LEVEL: Threat Score 100
+2025-03-27 00:04:26,580 - WARNING - THREAT: Potentially malicious process detected: powershell.exe
+2025-03-27 00:04:26,596 - WARNING - THREAT: CRITICAL THREAT LEVEL: Threat Score 100
+2025-03-27 00:04:31,613 - INFO - Threat Monitoring Stopped
