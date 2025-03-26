@@ -5,6 +5,7 @@ from typing import Dict, List, Any
 # Following files
 from threat_signatures import ThreatSignatures
 from logger import ThreatLogger
+from network_analyzer import NetworkAnalyzer
 
 class ThreatDetector:
     def __init__(self, logger: ThreatLogger):
@@ -12,98 +13,62 @@ class ThreatDetector:
         self.logger = logger
         self.threat_score = 0
         self.max_threat_score = 100
-    
+
     def analyze_network_connection(self, connection: Dict[str, Any]) -> bool:
-        """
-        Analyze a network connection for potential threats
-        
-        Args:
-            connection (Dict[str, Any]): Network connection details
-        
-        Returns:
-            bool: True if threat detected, False otherwise
-        """
-        # Validate connection dictionary has required keys
         if not connection or not isinstance(connection, dict):
-            self.logger.log_event(
-                "Invalid network connection data received", 
-                level='warning'
-            )
+            self.logger.log_event("Invalid network connection data received", level='warning')
             return False
 
-        # Extract remote address with safe fallback
         remote_address = connection.get('remote_address')
         remote_port = connection.get('remote_port')
 
-        # Skip analysis if remote address is None or empty
-        if not remote_address:
+        if not remote_address or not remote_port:
             self.logger.log_event(
-                "Skipping network connection analysis: No remote address", 
+                f"Skipping analysis: incomplete connection data - {connection}", 
                 level='warning'
             )
             return False
 
         net_sigs = self.signatures.get_network_signatures()
-        
-        # Check for blacklisted IPs
         if remote_address in net_sigs.get('blacklisted_ips', []):
             self.logger.log_threat(
-                f"Blocked connection to blacklisted IP: {remote_address}", 
-                severity='high'
+                f"Blocked connection to blacklisted IP: {remote_address}",
+                severity='high',
+                details=connection
             )
             self.increment_threat_score(30)
             return True
 
-        # Check for suspicious ports
         if remote_port in net_sigs.get('suspicious_ports', []):
             self.logger.log_threat(
-                f"Suspicious port detected: {remote_port}", 
-                severity='medium'
+                f"Suspicious port detected: {remote_port}",
+                severity='medium',
+                details=connection
             )
             self.increment_threat_score(20)
             return True
-        
+
         try:
-            # Only attempt domain resolution if remote_address is a valid string
-            if isinstance(remote_address, str):
-                # Resolve domain and check for suspicious patterns
-                domain = self._resolve_domain(remote_address)
-                
-                # Check for suspicious domains
-                for pattern in self.signatures.signatures['network_patterns']['suspicious_domains']:
-                    if re.search(pattern, domain, re.IGNORECASE):
-                        self.logger.log_threat(
-                            f"Suspicious domain detected: {domain}", 
-                            severity='medium'
-                        )
-                        self.increment_threat_score(25)
-                        return True
+            domain = NetworkAnalyzer.resolve_hostname(remote_address)
+            for pattern in self.signatures.signatures['network_patterns']['suspicious_domains']:
+                if re.search(pattern, domain, re.IGNORECASE):
+                    self.logger.log_threat(
+                        f"Suspicious domain detected: {domain}",
+                        severity='medium',
+                        details=connection
+                    )
+                    self.increment_threat_score(25)
+                    return True
         except Exception as e:
-            # Log resolution failures without interrupting the analysis
-            self.logger.log_event(
-                f"Domain resolution failed for {remote_address}: {str(e)}", 
-                level='warning'
-            )
+            self.logger.log_event(f"Domain resolution failed for {remote_address}: {e}", level='warning')
         
         return False
 
     def _resolve_domain(self, ip_address: str, timeout: float = 1.0) -> str:
-        """
-        Resolve domain name with a timeout and fallback mechanism
-        
-        Args:
-            ip_address (str): IP address to resolve
-            timeout (float, optional): DNS resolution timeout. Defaults to 1.0 seconds.
-        
-        Returns:
-            str: Resolved domain name or original IP address
-        """
-        # Validate input
         if not ip_address or not isinstance(ip_address, str):
             return ip_address
 
         try:
-            # First, try DNS lookup with timeout
             socket.setdefaulttimeout(timeout)
             domain = socket.gethostbyaddr(ip_address)[0]
             return domain
