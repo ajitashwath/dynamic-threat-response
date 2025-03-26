@@ -1,7 +1,5 @@
 import threading
 import time
-
-# Following files
 from threat_signatures import ThreatSignatures
 from threat_detector import ThreatDetector
 from network_analyzer import NetworkAnalyzer
@@ -20,28 +18,35 @@ class DynamicThreatResponseSystem:
         if not self.is_monitoring:
             self.is_monitoring = True
             self.monitoring_thread = threading.Thread(
-                target = self._monitoring_loop, 
-                daemon = True
+                target=self._monitoring_loop,
+                daemon=True
             )
             self.monitoring_thread.start()
             self.logger.log_event("Threat Monitoring Started")
+            return True
+        return False
 
     def stop_monitoring(self):
         if self.is_monitoring:
             self.is_monitoring = False
-            self.monitoring_thread.join()
+            if self.monitoring_thread:
+                self.monitoring_thread.join(timeout=5)  
             self.logger.log_event("Threat Monitoring Stopped")
+            return True
+        return False
 
     def _monitoring_loop(self):
         while self.is_monitoring:
-            network_connections = NetworkAnalyzer.get_network_connections()
-            for conn in network_connections:
-                self.threat_detector.analyze_network_connection(conn)
-            running_processes = ProcessMonitor.get_running_processes()
-            for process in running_processes:
-                self.threat_detector.analyze_process(process)
-
-            time.sleep(5)
+            try:
+                network_connections = NetworkAnalyzer.get_network_connections()
+                for conn in network_connections:
+                    self.threat_detector.analyze_network_connection(conn)
+                running_processes = ProcessMonitor.get_running_processes()
+                for process in running_processes:
+                    self.threat_detector.analyze_process(process)
+                time.sleep(5)
+            except Exception as e:
+                self.logger.log_event(f"Monitoring loop error: {e}", level='error')
 
 def main():
     threat_system = DynamicThreatResponseSystem()
