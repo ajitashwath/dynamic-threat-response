@@ -1,0 +1,98 @@
+[
+  {
+    "timestamp": "2025-03-26T21:50:43.537080",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-26T21:50:45.208993",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-26T21:50:46.889444",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-26T21:50:48.546611",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-26T21:50:50.185279",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-26T21:50:51.873313",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-26T21:50:53.520027",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-26T21:50:55.262775",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-26T21:50:56.867186",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-26T21:50:58.509779",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-26T21:55:19.288813",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-26T21:55:20.890741",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-26T21:55:22.507750",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-26T21:55:24.122501",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-26T21:55:25.750110",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-26T21:55:27.365499",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  }
+]
