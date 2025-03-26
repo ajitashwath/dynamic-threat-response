@@ -7,6 +7,7 @@ import json
 import psutil
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+import logging
 
 class ThreatResponseUI:
     def __init__(self, threat_system):
@@ -18,13 +19,62 @@ class ThreatResponseUI:
         self.style = ttk.Style()
         self.style.theme_use('clam')
         
-        self.threat_history = []  # For graph data
-        
+        self.threat_history = []
         self._create_status_frame()
         self._create_threat_log_frame()
         self._create_graph_frame()
         self._create_control_frame()
         self._create_system_info_frame()
+
+    # hahaha
+    class CustomLogHandler(logging.Handler):
+        def __init__(self, ui):
+            super().__init__()
+            self.ui = ui
+
+        def emit(self, record):
+            try:
+                msg = self.format(record)
+                self.ui.log_to_window(msg, record.levelname)
+            except Exception:
+                pass
+
+    def log_to_window(self, message, level='INFO'):
+        # Ensure logging happens in the main thread
+        if threading.current_thread() is not threading.main_thread():
+            self.root.after(0, self._log_to_window_thread_safe, message, level)
+        else:
+            self._log_to_window_thread_safe(message, level)
+
+    def _log_to_window_thread_safe(self, message, level):
+        tag = 'info'
+        if level == 'WARNING':
+            tag = 'warning'
+        elif level in ['ERROR', 'CRITICAL']:
+            tag = 'error'
+        
+        self.log_text.insert(tk.END, f"{message}\n", tag)
+        self.log_text.see(tk.END)
+
+    def _update_graph(self):
+        try:
+            threat_history = self.threat_system.threat_detector.get_threat_history()
+            
+            if not threat_history:
+                return
+
+            self.ax.clear()
+            self.ax.plot(threat_history, 'r-', label='Threat Score')
+            self.ax.set_ylim(0, 100)
+            self.ax.set_title('Threat Score Over Time')
+            self.ax.set_xlabel('Time (s)')
+            self.ax.set_ylabel('Score')
+            self.ax.legend()
+            self.canvas.draw()
+        except Exception as e:
+            print(f"Graph update error: {e}")
+
+    # end of hahaha
 
     def _create_status_frame(self):
         status_frame = ttk.Frame(self.root, padding="10")
