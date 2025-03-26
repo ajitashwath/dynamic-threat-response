@@ -1,11 +1,36 @@
 import re
 import socket
 import ipaddress
+import threading
 from typing import Dict, List, Any
 # Following files
 from threat_signatures import ThreatSignatures
 from logger import ThreatLogger
 from network_analyzer import NetworkAnalyzer
+from config import DANGER_THRESHOLD
+from status_manager import update_system_status
+from logger import log_status_change
+
+# Detects threats and evaluates their severity
+def calculate_severity(threat_data):
+    """
+    Simulates severity calculation based on input data.
+    You should replace this logic with actual severity assessment.
+    """
+    return threat_data.get("severity", 0)  # Default severity is 0 if not provided
+
+def assess_threat(threat_data):
+    """
+    Evaluates a threat and updates the system status if necessary.
+    """
+    severity = calculate_severity(threat_data)
+    
+    if severity >= DANGER_THRESHOLD:
+        update_system_status("Danger")
+        log_status_change("System status set to Danger due to high threat severity.")
+
+    return severity
+
 
 class ThreatDetector:
     def __init__(self, logger: ThreatLogger):
@@ -13,6 +38,34 @@ class ThreatDetector:
         self.logger = logger
         self.threat_score = 0
         self.max_threat_score = 100
+        self.threat_score_lock = threading.Lock()  # Fix: Add missing lock
+        self.threat_history = []  # Fix: Initialize threat history list
+
+
+    def increment_threat_score(self, score: int):
+        with self.threat_score_lock:
+            self.threat_score = min(self.threat_score + score, self.max_threat_score)
+
+            # Ensure `threat_history` does not exceed 50 entries
+            self.threat_history.append(self.threat_score)
+            if len(self.threat_history) > 50:
+                self.threat_history.pop(0)
+
+            if self.threat_score > 70:
+                self.logger.log_threat(
+                    f"CRITICAL THREAT LEVEL: Threat Score {self.threat_score}", 
+                    severity='critical'
+                )
+
+    def get_threat_history(self):
+        with self.threat_score_lock:
+            return self.threat_history.copy()
+
+    def reset_threat_score(self):
+        with self.threat_score_lock:
+            self.threat_score = 0
+            self.threat_history.clear()
+
 
     def analyze_network_connection(self, connection: Dict[str, Any]) -> bool:
         if not connection or not isinstance(connection, dict):

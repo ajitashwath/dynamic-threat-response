@@ -2,6 +2,12 @@ import os
 import json
 from typing import Dict, Any
 
+# Configuration file to define thresholds and global parameters
+
+DANGER_THRESHOLD = 7  # Example threshold; adjust based on your severity scale
+SYSTEM_STATUS = "Normal"  # Default system status
+
+
 class SystemConfig:
     def __init__(self, config_path: str = 'config.json'):
         self.config_path = config_path
