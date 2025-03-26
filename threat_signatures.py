@@ -57,7 +57,6 @@ class ThreatSignatures:
                 ]
             }
         }
-
     def get_network_signatures(self) -> Dict[str, Any]:
         return self.signatures.get("network_threats", {})
 
