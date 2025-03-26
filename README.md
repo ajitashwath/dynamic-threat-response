@@ -8,8 +8,8 @@
 
 1. Clone the repository
 ```bash
-git clone <repository-url>
-cd dynamic-threat-response-system
+git clone https://github.com/ajitashwathr10/dynamic-threat-response
+cd dynamic-threat-response
 ```
 
 2. Create a virtual environment
