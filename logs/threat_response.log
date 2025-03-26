@@ -2,3 +2,18 @@
 2025-03-25 23:59:48 | INFO | Threat Monitoring Started
 2025-03-26 00:33:46 | INFO | Threat Monitoring Started
 2025-03-26 00:44:55 | INFO | Threat Monitoring Started
+2025-03-26 10:57:03 | INFO | Threat Monitoring Started
+2025-03-26 11:08:21 | INFO | Threat Monitoring Started
+2025-03-26 11:12:24 | INFO | Threat Monitoring Started
+2025-03-26 11:12:24 | WARNING | Domain resolution failed for None: gethostbyaddr() argument 1 must be str, bytes or bytearray, not None
+2025-03-26 11:12:24 | WARNING | Domain resolution failed for None: gethostbyaddr() argument 1 must be str, bytes or bytearray, not None
+2025-03-26 11:12:24 | WARNING | Domain resolution failed for None: gethostbyaddr() argument 1 must be str, bytes or bytearray, not None
+2025-03-26 11:12:24 | WARNING | Domain resolution failed for None: gethostbyaddr() argument 1 must be str, bytes or bytearray, not None
+2025-03-26 11:16:44 | INFO | Threat Monitoring Started
+2025-03-26 11:16:54 | WARNING | Skipping network connection analysis: No remote address
+2025-03-26 11:16:54 | WARNING | Skipping network connection analysis: No remote address
+2025-03-26 11:16:54 | WARNING | Skipping network connection analysis: No remote address
+2025-03-26 11:19:37 | INFO | Threat Monitoring Started
+2025-03-26 11:19:47 | WARNING | Skipping network connection analysis: No remote address
+2025-03-26 11:19:57 | WARNING | Skipping network connection analysis: No remote address
+2025-03-26 11:19:57 | WARNING | Skipping network connection analysis: No remote address
