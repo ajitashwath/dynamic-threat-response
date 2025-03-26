@@ -1,61 +1,38 @@
 # Dynamic Threat Response System
 
-## Project Overview
-This is a multi-language security monitoring application that:
-- Uses `C` to monitor file system events
-- Leverages `Rust` for threat detection
-- Orchestrates the process using `Python`
-
 ## Prerequisites
-- GCC (for C compilation)
-- Rust (with Cargo)
 - Python 3.9+
-- Makefile
+- Recommended: Create a virtual environment
 
-## Project Structure
-```
-project_root/
-│
-├── src/
-│   ├── clang/
-│   │   ├── Makefile
-│   │   └── monitor.c
-│   │
-│   ├── python/
-│   │   ├── main.py
-│   │   └── bindings.py
-│   │
-│   └── rust/
-│       ├── Cargo.toml
-│       └── lib.rs
-```
+## Installation
 
-## Setup and Compilation
-
-### 1. Compile C Library
+1. Clone the repository
 ```bash
-cd src/clang
-make
-```
-This creates `../lib/libmonitor.so`
-
-### 2. Compile Rust Library
-```bash
-cd src/rust
-cargo build --release
-cp target/release/librustsec.so ../lib/
+git clone <repository-url>
+cd dynamic-threat-response-system
 ```
 
-### 3. Prepare Monitoring Directory
+2. Create a virtual environment
 ```bash
-mkdir -p /tmp/test_dir
+python3 -m venv venv
+source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 ```
 
-### 4. Run the Application
+3. Install dependencies
 ```bash
-cd src/python
-python3 main.py
+pip install -r requirements.txt
 ```
+
+4. Run the application
+```bash
+python src/main.py
+```
+
+## Development
+
+- Run tests: `pytest`
+- Code formatting: `black .`
+- Type checking: `mypy .`
 
 ## Contributing
 CSE316 Project - Dynamic Threat Response System

@@ -1,7 +1,5 @@
 psutil
-tkinter
 requests
-netaddr
 cryptography
 PyYAML
 python-json-logger
@@ -15,4 +13,3 @@ GPUtil
 py-cpuinfo
 ipaddress
 dnspython
-netinfo
