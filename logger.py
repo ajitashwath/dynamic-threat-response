@@ -7,27 +7,33 @@ from typing import Dict, Any, Optional
 
 class ThreatLogger:
     def __init__(
-        self, 
-        log_dir: str = 'logs', 
+        self,
+        log_dir: str = 'logs',
         log_file: str = 'threat_response.log',
-        max_log_size: int = 10 * 1024 * 1024, 
+        max_log_size: int = 10 * 1024 * 1024,
         backup_count: int = 5
     ):
-        os.makedirs(log_dir, exist_ok = True)
+        os.makedirs(log_dir, exist_ok=True)
         self.log_path = os.path.join(log_dir, log_file)
+        self.threat_log_path = os.path.join(log_dir, 'threat_events.json')
+        if not os.path.exists(self.threat_log_path):
+            with open(self.threat_log_path, 'w') as f:
+                f.write('')
+        
         self.logger = logging.getLogger('ThreatResponseLogger')
         self.logger.setLevel(logging.INFO)
-    
         self.logger.handlers.clear()
+
         file_handler = RotatingFileHandler(
-            self.log_path, 
-            maxBytes = max_log_size, 
-            backupCount = backup_count
+            self.log_path,
+            maxBytes=max_log_size,
+            backupCount=backup_count
         )
         file_handler.setFormatter(logging.Formatter(
             '%(asctime)s | %(levelname)s | %(message)s',
-            datefmt = '%Y-%m-%d %H:%M:%S'
+            datefmt='%Y-%m-%d %H:%M:%S'
         ))
+
         console_handler = logging.StreamHandler()
         console_handler.setFormatter(logging.Formatter(
             '%(asctime)s | %(levelname)s | %(message)s',
@@ -36,12 +42,11 @@ class ThreatLogger:
 
         self.logger.addHandler(file_handler)
         self.logger.addHandler(console_handler)
-        self.threat_log_path = os.path.join(log_dir, 'threat_events.json')
-        
+
     def log_event(
-        self, 
-        message: str, 
-        level: str = 'info', 
+        self,
+        message: str,
+        level: str = 'info',
         extra_data: Optional[Dict[str, Any]] = None
     ):
         log_levels = {
@@ -54,11 +59,11 @@ class ThreatLogger:
         log_func(message)
         if extra_data:
             self.logger.info(f"Context: {json.dumps(extra_data)}")
-    
+
     def log_threat(
-        self, 
-        message: str, 
-        severity: str = 'low', 
+        self,
+        message: str,
+        severity: str = 'low',
         details: Optional[Dict[str, Any]] = None
     ):
         threat_entry = {
@@ -68,12 +73,19 @@ class ThreatLogger:
             'details': details or {}
         }
         self.logger.warning(f"THREAT: {message}")
+
         try:
-            with open(self.threat_log_path, 'a') as f:
-                json.dump(threat_entry, f)
-                f.write('\n')
+            threats = self.get_recent_threats(limit=None) if os.path.exists(self.threat_log_path) else []
+            threats.append(threat_entry)
+            with open(self.threat_log_path, 'w') as f:
+                json.dump(threats, f, indent=2)
         except IOError as e:
             self.logger.error(f"Could not write to threat log: {e}")
+        except json.JSONDecodeError as e:
+            self.logger.error(f"JSON error in threat log: {e}")
+            # Reset file if corrupted
+            with open(self.threat_log_path, 'w') as f:
+                json.dump([threat_entry], f, indent=2)
         severity_colors = {
             'LOW': '\033[92m',      # Green
             'MEDIUM': '\033[93m',   # Yellow
@@ -83,42 +95,28 @@ class ThreatLogger:
         severity_upper = severity.upper()
         color_code = severity_colors.get(severity_upper, '\033[0m')
         print(f"{color_code}THREAT [{severity_upper}]: {message}\033[0m")
-    
+
     def get_recent_threats(self, limit: int = 10) -> list:
         try:
             with open(self.threat_log_path, 'r') as f:
-                lines = f.readlines()[-limit:]
-                return [json.loads(line) for line in lines]
-        except (FileNotFoundError, json.JSONDecodeError):
+                content = f.read().strip()
+                if not content:
+                    return []
+                threats = json.loads(content)
+                # If limit is None, return all threats
+                return threats[-limit:] if limit else threats
+        except FileNotFoundError:
             return []
-    
+        except json.JSONDecodeError:
+            self.logger.error("Threat log file corrupted, resetting")
+            with open(self.threat_log_path, 'w') as f:
+                f.write('')
+            return []
+
     def clear_logs(self, confirm: bool = False):
         if confirm:
-            open(self.log_path, 'w').close()
-            open(self.threat_log_path, 'w').close()
+            with open(self.log_path, 'w'):
+                pass
+            with open(self.threat_log_path, 'w'):
+                pass
             self.log_event("Logs have been cleared")
-
-
-'''
-def main():
-    logger = ThreatLogger()
-    
-    # Standard event logging
-    logger.log_event("System Started", "info")
-    
-    # Threat logging
-    logger.log_threat(
-        "Suspicious Network Connection Detected", 
-        severity='high', 
-        details={
-            'source_ip': '192.168.1.100',
-            'destination_port': 4444
-        }
-    )
-    
-    # Retrieve recent threats
-    recent_threats = logger.get_recent_threats()
-    print("Recent Threats:", recent_threats)
-if __name__ == "__main__":
-    main()'
-'''
