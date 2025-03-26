@@ -5,19 +5,6 @@ from datetime import datetime
 import json
 from typing import Dict, Any, Optional
 
-# Logging module to track system changes and events
-# Configure logging
-logging.basicConfig(
-    filename="system.log",
-    level=logging.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s"
-)
-
-def log_status_change(message):
-    """Logs status changes in the system."""
-    logging.info(message)
-
-    
 class ThreatLogger:
     def __init__(
         self,
@@ -26,35 +13,40 @@ class ThreatLogger:
         max_log_size: int = 10 * 1024 * 1024,
         backup_count: int = 5
     ):
-        os.makedirs(log_dir, exist_ok=True)
-        self.log_path = os.path.join(log_dir, log_file)
-        self.threat_log_path = os.path.join(log_dir, 'threat_events.json')
-        if not os.path.exists(self.threat_log_path):
-            with open(self.threat_log_path, 'w') as f:
-                f.write('')
-        
-        self.logger = logging.getLogger('ThreatResponseLogger')
-        self.logger.setLevel(logging.INFO)
-        self.logger.handlers.clear()
+        try:
+            os.makedirs(log_dir, exist_ok=True)
+            self.log_path = os.path.join(log_dir, log_file)
+            self.threat_log_path = os.path.join(log_dir, 'threat_events.json')
 
-        file_handler = RotatingFileHandler(
-            self.log_path,
-            maxBytes=max_log_size,
-            backupCount=backup_count
-        )
-        file_handler.setFormatter(logging.Formatter(
-            '%(asctime)s | %(levelname)s | %(message)s',
-            datefmt='%Y-%m-%d %H:%M:%S'
-        ))
+            if not os.path.exists(self.threat_log_path):
+                with open(self.threat_log_path, 'w') as f:
+                    json.dump([], f)
+            
+            self.logger = logging.getLogger('ThreatResponseLogger')
+            self.logger.setLevel(logging.INFO)
+            self.logger.handlers.clear()
 
-        console_handler = logging.StreamHandler()
-        console_handler.setFormatter(logging.Formatter(
-            '%(asctime)s | %(levelname)s | %(message)s',
-            datefmt='%H:%M:%S'
-        ))
+            file_handler = RotatingFileHandler(
+                self.log_path,
+                maxBytes=max_log_size,
+                backupCount=backup_count
+            )
+            file_handler.setFormatter(logging.Formatter(
+                '%(asctime)s | %(levelname)s | %(message)s',
+                datefmt='%Y-%m-%d %H:%M:%S'
+            ))
 
-        self.logger.addHandler(file_handler)
-        self.logger.addHandler(console_handler)
+            console_handler = logging.StreamHandler()
+            console_handler.setFormatter(logging.Formatter(
+                '%(asctime)s | %(levelname)s | %(message)s',
+                datefmt='%H:%M:%S'
+            ))
+
+            self.logger.addHandler(file_handler)
+            self.logger.addHandler(console_handler)
+        except Exception as e:
+            print(f"Critical error initializing logger: {e}")
+            raise
 
     def log_event(
         self,
@@ -90,15 +82,16 @@ class ThreatLogger:
         try:
             threats = self.get_recent_threats(limit=None) if os.path.exists(self.threat_log_path) else []
             threats.append(threat_entry)
+            
             with open(self.threat_log_path, 'w') as f:
                 json.dump(threats, f, indent=2)
         except IOError as e:
             self.logger.error(f"Could not write to threat log: {e}")
         except json.JSONDecodeError as e:
             self.logger.error(f"JSON error in threat log: {e}")
-            # Reset file if corrupted
             with open(self.threat_log_path, 'w') as f:
                 json.dump([threat_entry], f, indent=2)
+
         severity_colors = {
             'LOW': '\033[92m',      # Green
             'MEDIUM': '\033[93m',   # Yellow
@@ -116,20 +109,25 @@ class ThreatLogger:
                 if not content:
                     return []
                 threats = json.loads(content)
-                # If limit is None, return all threats
                 return threats[-limit:] if limit else threats
         except FileNotFoundError:
             return []
         except json.JSONDecodeError:
             self.logger.error("Threat log file corrupted, resetting")
             with open(self.threat_log_path, 'w') as f:
-                f.write('')
+                f.write('[]')
             return []
 
     def clear_logs(self, confirm: bool = False):
         if confirm:
-            with open(self.log_path, 'w'):
-                pass
-            with open(self.threat_log_path, 'w'):
-                pass
-            self.log_event("Logs have been cleared")
+            try:
+                with open(self.log_path, 'w') as f:
+                    pass
+                with open(self.threat_log_path, 'w') as f:
+                    json.dump([], f)
+                self.log_event("Logs have been cleared")
+            except Exception as e:
+                self.logger.error(f"Failed to clear logs: {e}")
+                
+    def log_status_change(self, message: str):
+        self.logger.info(message)
