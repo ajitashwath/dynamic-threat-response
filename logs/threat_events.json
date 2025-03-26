@@ -1,0 +1,3530 @@
+[
+  {
+    "timestamp": "2025-03-26T23:20:23.196048",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.231256",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.252209",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.275964",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.297766",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.312577",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.328622",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.345301",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.361799",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.379966",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.396942",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.413628",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.429954",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.446116",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.462895",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.479750",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.495999",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.511699",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.527347",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.543210",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.561457",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.577405",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.593203",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.609553",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.625652",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.641542",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.657260",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.673797",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.691979",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.708789",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.725883",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.744044",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.761930",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.779618",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.799027",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.816028",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.832712",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.850704",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.867090",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.885811",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.901630",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.917061",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.937323",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.954080",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.970761",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:23.988020",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.006806",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.025794",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.044874",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.062168",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.079044",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.095863",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.112774",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.130085",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.146341",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.163194",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.180744",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.198626",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.216458",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.237896",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.256928",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.316949",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.335027",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.364143",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.381876",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.399832",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.418826",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.433329",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.450839",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.468811",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.486459",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.504634",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.521928",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.539682",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.557056",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.574824",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.593048",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.610854",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.628280",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.646193",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.663164",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.682390",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.699905",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.717577",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.736604",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.754684",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.772059",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.788977",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.806737",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.824403",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.841721",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.859412",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.877108",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.895080",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.912720",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.931608",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.952322",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.971308",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:24.989668",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.008306",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.027118",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.045217",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.064434",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.082772",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.102150",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.122031",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.140744",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.159852",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.177697",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.196403",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.214958",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.233324",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.253370",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.272349",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.290678",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.309497",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.330827",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.344683",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.397791",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.419079",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.440775",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.460075",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.479492",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.498834",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.518345",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.537463",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.559285",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.581140",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.603629",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.623129",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.641903",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.660340",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.679592",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.698676",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.717275",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.736897",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.756186",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.775525",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.796792",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.816766",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.836889",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.856169",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.875714",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.898169",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.930374",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.954939",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.977660",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:25.998428",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.018638",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.038669",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.057414",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.076131",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.095973",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.115910",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.135577",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.154566",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.174687",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.196168",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.221272",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.242947",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.266298",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.287257",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.309789",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.330255",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.349737",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.370052",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.391892",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.414102",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.428937",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.484934",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.507055",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.527711",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.549125",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.569932",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.591262",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.611230",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.636342",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.656505",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.677186",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.697510",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.717973",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.740122",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.759871",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.779892",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.799810",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.822279",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.843873",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.867597",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.890117",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.910659",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.933483",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.956152",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:26.979752",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.004426",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.026396",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.048241",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.070187",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.090605",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.113212",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.137204",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.159333",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.180153",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.201148",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.225001",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.251525",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.275095",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.295910",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.319688",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.343222",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.363872",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.385444",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.406842",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.429384",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.452301",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.488444",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.514947",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.574422",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.597529",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:27.619639",
+    "message": "Suspicious port detected: 4444",
+    "severity": "MEDIUM",
+    "details": {
+      "fd": null,
+      "family": "2",
+      "type": "1",
+      "local_address": "127.0.0.1",
+      "local_port": 62697,
+      "remote_address": "127.0.0.1",
+      "remote_port": 4444,
+      "status": "TIME_WAIT",
+      "pid": 0
+    }
+  },
+  {
+    "timestamp": "2025-03-26T23:20:30.982520",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-26T23:20:32.833480",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-26T23:20:34.768606",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-26T23:20:36.550056",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  }
+]
