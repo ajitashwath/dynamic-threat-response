@@ -3,34 +3,16 @@ import socket
 import ipaddress
 import threading
 from typing import Dict, List, Any
+
 # Following files
 from threat_signatures import ThreatSignatures
 from logger import ThreatLogger
-from network_analyzer import NetworkAnalyzer
+#from network_analyzer import NetworkAnalyzer
 from config import DANGER_THRESHOLD
-from status_manager import update_system_status
-from logger import log_status_change
+#from status_manager import update_system_status
 
-# Detects threats and evaluates their severity
 def calculate_severity(threat_data):
-    """
-    Simulates severity calculation based on input data.
-    You should replace this logic with actual severity assessment.
-    """
-    return threat_data.get("severity", 0)  # Default severity is 0 if not provided
-
-def assess_threat(threat_data):
-    """
-    Evaluates a threat and updates the system status if necessary.
-    """
-    severity = calculate_severity(threat_data)
-    
-    if severity >= DANGER_THRESHOLD:
-        update_system_status("Danger")
-        log_status_change("System status set to Danger due to high threat severity.")
-
-    return severity
-
+    return threat_data.get("severity", 0)  
 
 class ThreatDetector:
     def __init__(self, logger: ThreatLogger):
@@ -38,15 +20,12 @@ class ThreatDetector:
         self.logger = logger
         self.threat_score = 0
         self.max_threat_score = 100
-        self.threat_score_lock = threading.Lock()  # Fix: Add missing lock
-        self.threat_history = []  # Fix: Initialize threat history list
-
-
+        self.threat_score_lock = threading.Lock() 
+        self.threat_history = [] 
+    
     def increment_threat_score(self, score: int):
         with self.threat_score_lock:
             self.threat_score = min(self.threat_score + score, self.max_threat_score)
-
-            # Ensure `threat_history` does not exceed 50 entries
             self.threat_history.append(self.threat_score)
             if len(self.threat_history) > 50:
                 self.threat_history.pop(0)
@@ -65,13 +44,12 @@ class ThreatDetector:
         with self.threat_score_lock:
             self.threat_score = 0
             self.threat_history.clear()
-
+            self.threat_history = []
 
     def analyze_network_connection(self, connection: Dict[str, Any]) -> bool:
         if not connection or not isinstance(connection, dict):
             self.logger.log_event("Invalid network connection data received", level='warning')
             return False
-
         remote_address = connection.get('remote_address')
         remote_port = connection.get('remote_port')
 
@@ -107,7 +85,6 @@ class ThreatDetector:
             )
             self.increment_threat_score(20)
             return True
-
         return False
 
     
@@ -133,7 +110,6 @@ class ThreatDetector:
             try:
                 return socket.getfqdn(ip_address)
             except Exception:
-                # If all methods fail, return the original IP
                 return ip_address
     
     def _is_ip_blacklisted(self, ip: str, blacklist: List[str]) -> bool:
@@ -142,7 +118,6 @@ class ThreatDetector:
             for blocked_range in blacklist:
                 try:
                     if '/' in blocked_range:
-                        # CIDR notation check
                         network = ipaddress.ip_network(blocked_range, strict=False)
                         if ip_obj in network:
                             return True
@@ -186,14 +161,10 @@ class ThreatDetector:
                 level='warning'
             )
             return False
-
         file_sigs = self.signatures.get_file_signatures()
         
         try:
-            # Extract file extension safely
             file_ext = file_path.split('.')[-1] if '.' in file_path else ''
-            
-            # Check for suspicious file extensions
             if f".{file_ext}" in file_sigs.get('suspicious_extensions', []):
                 self.logger.log_threat(
                     f"Suspicious file extension detected: .{file_ext}", 
@@ -213,6 +184,7 @@ class ThreatDetector:
                         )
                         self.increment_threat_score(50)
                         return True
+                    
         except FileNotFoundError:
             self.logger.log_event(
                 f"File not found during analysis: {file_path}", 
@@ -231,20 +203,6 @@ class ThreatDetector:
 
         return False
 
-    def increment_threat_score(self, score: int):
-        with self.threat_score_lock:
-            self.threat_score = min(self.threat_score + score, self.max_threat_score)
-            
-            # Limit threat history to last 50 entries
-            self.threat_history.append(self.threat_score)
-            if len(self.threat_history) > 50:
-                self.threat_history.pop(0)
-            
-            if self.threat_score > 70:
-                self.logger.log_threat(
-                    f"CRITICAL THREAT LEVEL: Threat Score {self.threat_score}", 
-                    severity='critical'
-                )
     def get_threat_history(self):
         with self.threat_score_lock:
             return self.threat_history.copy()
