@@ -2,11 +2,8 @@ import os
 import json
 from typing import Dict, Any
 
-# Configuration file to define thresholds and global parameters
-
-DANGER_THRESHOLD = 7  # Example threshold; adjust based on your severity scale
-SYSTEM_STATUS = "Normal"  # Default system status
-
+DANGER_THRESHOLD = 7 
+SYSTEM_STATUS = "Normal" 
 
 class SystemConfig:
     def __init__(self, config_path: str = 'config.json'):
@@ -79,18 +76,3 @@ class SystemConfig:
                 json.dump(self.config, f, indent = 4)
         except IOError:
             print(f"Could not save configuration to {self.config_path}")
-
-'''
-def main():
-    config = SystemConfig()
-    
-    # Get configuration values
-    print("Scan Interval:", config.get('monitoring.scan_interval'))
-    
-    # Update configuration
-    config.update('monitoring.scan_interval', 10)
-    config.update('notifications.email_alerts', True)
-
-if __name__ == "__main__":
-    main()'
-'''
