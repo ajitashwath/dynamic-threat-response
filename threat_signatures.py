@@ -1,6 +1,6 @@
 import re
 import json
-from typing import Dict, List, Any
+from typing import Dict, Any
 
 class ThreatSignatures:
     def __init__(self, config_path = 'signatures.json'):
