@@ -13,7 +13,7 @@ class ThreatResponseUI:
         self.threat_system = threat_system
         self.root = tk.Tk()
         self.root.title("Dynamic Threat Response System")
-        self.root.geometry("900x700")
+        self.root.geometry("900x900")
         self.root.configure(bg='#F0F0F0')
         self.style = ttk.Style()
         self.style.theme_use('clam')
