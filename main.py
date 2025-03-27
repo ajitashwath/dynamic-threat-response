@@ -1,7 +1,6 @@
 import threading
 import time
 #import traceback
-
 # Following files
 #from threat_signatures import ThreatSignatures
 from threat_detector import ThreatDetector
