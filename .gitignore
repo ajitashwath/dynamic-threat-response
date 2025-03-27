@@ -52,3 +52,6 @@ env.bak/
 
 # Windows specific
 Thumbs.db
+
+.logs/
+system.log
