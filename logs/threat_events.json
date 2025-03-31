@@ -1,0 +1,314 @@
+[
+  {
+    "timestamp": "2025-03-27T11:58:02.544906",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:02.546740",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:02.554623",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 80",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:02.563442",
+    "message": "Potentially malicious process detected: ServiceShell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:02.571795",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:02.580347",
+    "message": "Potentially malicious process detected: ShellExperienceHost.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:02.588361",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:09.483805",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:09.488014",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:09.498806",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:09.508453",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:09.517501",
+    "message": "Potentially malicious process detected: ServiceShell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:09.526878",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:09.534278",
+    "message": "Potentially malicious process detected: ShellExperienceHost.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:09.543407",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:16.399226",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:16.401562",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:16.412655",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:16.422005",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:16.429988",
+    "message": "Potentially malicious process detected: ServiceShell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:16.440024",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:16.447479",
+    "message": "Potentially malicious process detected: ShellExperienceHost.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T11:58:16.456663",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:27.514372",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:27.516521",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:27.526542",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 80",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:27.537665",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:27.547555",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:27.558291",
+    "message": "Potentially malicious process detected: ServiceShell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:27.568445",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:27.578822",
+    "message": "Potentially malicious process detected: ShellExperienceHost.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:27.589602",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:34.256867",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:34.260868",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:34.273078",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:34.283389",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:34.294602",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:34.305977",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:34.318062",
+    "message": "Potentially malicious process detected: ServiceShell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:34.329593",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:34.339920",
+    "message": "Potentially malicious process detected: ShellExperienceHost.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:34.350597",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:40.890342",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:40.895325",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:40.911173",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:40.923111",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:40.934943",
+    "message": "Potentially malicious process detected: powershell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:40.944963",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:40.956146",
+    "message": "Potentially malicious process detected: ServiceShell.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:40.967229",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:40.978691",
+    "message": "Potentially malicious process detected: ShellExperienceHost.exe",
+    "severity": "HIGH",
+    "details": {}
+  },
+  {
+    "timestamp": "2025-03-27T18:13:40.989211",
+    "message": "CRITICAL THREAT LEVEL: Threat Score 100",
+    "severity": "CRITICAL",
+    "details": {}
+  }
+]
