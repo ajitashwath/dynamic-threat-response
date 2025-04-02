@@ -298,8 +298,6 @@ Potential areas for future development:
 7. **File system monitoring**: Add real-time file system change detection
 
 ## Contributors
-
-## Contributors
 - [@ajitashwathr10](https://github.com/ajitashwathr10)
 - [@Kee-rti](https://github.com/Kee-rti)
 - [@mansipandey21](https://github.com/mansipandey21)
